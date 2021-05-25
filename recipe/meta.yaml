@@ -15,8 +15,6 @@ source:
 build:
   merge_build_host: true  # [win]
   number: 0
-  # some dependencies are >=3.6 only
-  skip: true  # [r_base == "3.5.1"]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -70,7 +68,7 @@ test:
 
 about:
   home: https://github.com/dselivanov/rsparse
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: "Implements many algorithms for statistical learning on sparse matrices - matrix factorizations, matrix completion, elastic net regressions, factorization machines. Also 'rsparse' enhances 'Matrix' package by providing methods for multithreaded <sparse, dense> matrix products and native slicing of the sparse matrices\
     \ in Compressed Sparse Row (CSR) format. List of the algorithms for regression problems: 1) Elastic Net regression via Follow The Proximally-Regularized Leader (FTRL) Stochastic Gradient Descent (SGD), as per McMahan et al(, <doi:10.1145/2487575.2488200>) 2) Factorization Machines via SGD, as per Rendle (2010, <doi:10.1109/ICDM.2010.127>)\
     \ List of algorithms for matrix factorization and matrix completion: 1) Weighted Regularized Matrix Factorization (WRMF) via Alternating Least Squares (ALS) - paper by Hu, Koren, Volinsky (2008, <doi:10.1109/ICDM.2008.22>) 2) Maximum-Margin Matrix Factorization via ALS, paper by Rennie, Srebro (2005, <doi:10.1145/1102351.1102441>)\
