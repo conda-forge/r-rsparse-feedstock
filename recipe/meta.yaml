@@ -62,7 +62,6 @@ requirements:
     - r-float >=0.2_2
     - r-lgr >=0.2
 
-
 test:
   commands:
     - $R -e "library('rsparse')"           # [not win]
