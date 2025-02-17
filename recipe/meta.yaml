@@ -1,4 +1,4 @@
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rsparse_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rsparse/rsparse_{{ version }}.tar.gz
-  sha256: d7632e153ae4f97199cf023fdddfb1906a93f1451700c98dd3722afa17ac8028
+  sha256: 69e1491a6feed96042a04fd9a06ba50c10d45ce9d1f9fbf1f7000ad45e97f17b
 
 build:
   number: 0
